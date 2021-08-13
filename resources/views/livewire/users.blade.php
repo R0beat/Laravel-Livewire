@@ -17,7 +17,7 @@
         </div>
         <div class="mb-4">
             <label class="text-pink-600 font-bold mb-2">Password:</label>
-            <input class="p-2 bg-pink-50 outline-none w-full" type="pass" wire:model='password'>
+            <input class="p-2 bg-pink-50 outline-none w-full" type="password" wire:model='password'>
             @error('password') <em class="text-xs text-red-900"> {{ $message }}</em> @enderror 
         </div>
 

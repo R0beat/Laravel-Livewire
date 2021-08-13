@@ -11,14 +11,14 @@ class Users extends Component
 
     public function render(){
         return view('livewire.users',[
-            'users' => User::latest()->get()
+            'users' => User::orderBy('id')->get()
         ]);
     }
     public function store(){
         $this-> validate([
             'name' => 'required',
-            'password' => 'required',
-            'email' => 'required',
+            'email' => 'required|email|max:190|unique:users',
+            'password' => 'required|min:6',
         ]);
         User::create([
             'name' => $this->name,
