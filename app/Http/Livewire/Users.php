@@ -34,6 +34,11 @@ class Users extends Component
         $this->password = '';
 
         # Mensaje de Sesión que se enviara a nuestra vista
-        session()->flash('message','Usuario Creado');
+        #session()->flash('message','Usuario Creado');
+
+        $this->succes();
+    }
+    public function succes(){
+        $this->dispatchBrowserEvent('alert',['message'=>'Usuario Creado']);
     }
 }

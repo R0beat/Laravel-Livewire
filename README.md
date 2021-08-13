@@ -18,7 +18,7 @@ composer require livewire/livewire
 ```php
 php artisan make:livewire users
 ```
-## Hacemos las _migraciones_
+## Hacemos las _Migraciones_
 ```php
 php artisan migrate
 ```

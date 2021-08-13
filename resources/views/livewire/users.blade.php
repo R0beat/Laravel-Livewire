@@ -1,7 +1,9 @@
 <div>
-    @if (session()->has('message'))
-    {{ session('message') }}
-    @endif
+    {{--  
+        @if (session()->has('message'))
+        {{ session('message') }}
+        @endif
+    --}}
     <form action="">
         <label for="">Nombre:</label>
         <input type="text" wire:model='name'>
@@ -37,3 +39,4 @@
         </tbody>
     </table>
 </div>
+
